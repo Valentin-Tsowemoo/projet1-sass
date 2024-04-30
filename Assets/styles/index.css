@@ -1,1 +1,163 @@
-/*# sourceMappingURL=index.css.map */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+}
+
+.nav-right ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.nav-left {
+  margin-left: 80px;
+}
+
+.sec-top {
+  position: relative;
+}
+.sec-top h4 {
+  text-align: center;
+  margin-right: 50px;
+}
+.sec-top::before {
+  content: "";
+  width: 35%;
+  background-color: grey;
+  height: 1px;
+  position: absolute;
+  transform: translate(70px, 10px);
+}
+.sec-top::after {
+  content: "";
+  width: 35%;
+  background-color: grey;
+  height: 1px;
+  position: absolute;
+  transform: translate(96px, -1149px);
+}
+.sec-top img {
+  width: 90%;
+  margin-left: 70px;
+}
+.sec-top h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  margin-right: 45px;
+  font-size: 3rem;
+}
+.sec-top p {
+  text-align: center;
+  width: 55%;
+  margin-left: 310px;
+  font-size: 1.2rem;
+}
+.sec-top button {
+  margin: 70px 0 auto 580px;
+  background: transparent;
+  text-transform: uppercase;
+  border: 2px solid black;
+  height: 55px;
+  width: 15%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sec-but {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10% 30% 30% 20% 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "d1 d2" "p1 p2" "i1 i2" "t1 t2" "b1 b2";
+}
+
+.sec2-right {
+  /*display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "d1"
+  "p1"
+  "i1"
+  "t1"
+  "b1";*/
+}
+.sec2-right h4 {
+  grid-area: d1;
+  text-align: center;
+}
+.sec2-right h2 {
+  grid-area: p1;
+  text-align: center;
+  width: 30%;
+  margin-left: 220px;
+  text-transform: uppercase;
+}
+.sec2-right img {
+  grid-area: i1;
+  width: 65%;
+  margin-left: 100px;
+}
+.sec2-right p {
+  grid-area: t1;
+  text-align: left;
+  width: 90%;
+}
+.sec2-right button {
+  grid-area: b1;
+  margin: 15px 0 auto 240px;
+  background: transparent;
+  border: 2px solid black;
+  width: 22%;
+  height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sec2-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "d1 d2" "p1 p2" "i1 i2" "t1 t2" "b1 b2";
+}
+.sec2-left h4 {
+  grid-area: d2;
+  text-align: center;
+}
+.sec2-left h2 {
+  grid-area: p2;
+  text-align: center;
+  width: 30%;
+  margin-left: 220px;
+  text-transform: uppercase;
+}
+.sec2-left img {
+  grid-area: i2;
+  width: 65%;
+  margin-left: 100px;
+}
+.sec2-left p {
+  grid-area: t2;
+  text-align: left;
+  width: 90%;
+}
+.sec2-left button {
+  grid-area: b2;
+  margin: 15px 0 auto 240px;
+  background: transparent;
+  border: 2px solid black;
+  width: 22%;
+  height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}/*# sourceMappingURL=index.css.map */
