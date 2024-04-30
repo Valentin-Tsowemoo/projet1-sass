@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Inter-ExtraBold";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: "Merriweather-Light";
+    src: url(../fonts/Merriweather-Light.ttf);
+  }
+
+footer{
+    background: rgb(232, 232, 232);
+    margin-top: 30px;
+    font-family: "Merriweather-Light";
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    @media screen and (max-width:700px) {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.footer-left {
+    width: 75%;
+    margin: 0 auto;
+    color: gray;
+    font-weight: bold;
+    padding: 3rem 0 0 0;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       
+    }
+
+    label{
+        text-transform: uppercase;
+        margin : 15px 0;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        border : 1px solid rgb(209, 209, 209);
+        background: rgb(232, 232, 232);
+        border-radius: 3px;
+
+    }
+
+    input{
+        height: 40px;
+    }
+
+    textarea{
+        resize: none;
+    }
+    
+    input[type="submit"]{
+        width: 30%;
+        text-transform: uppercase;
+        background: rgb(232, 232, 232);
+        margin-top: 2rem;
+        color: gray;
+        font-weight: bold;
+    }
+
+
+    @media screen and (max-width:700px) {
+        padding-bottom: 5rem;
+
+        input[type="submit"]:hover{
+            font-family: "Inter-ExtraBold";
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+    }
+}
+
+.footer-right{
+    color: gray;
+    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-left: 1px solid rgba(0, 0, 0, 0.100);
+ 
+    div{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        border-bottom: 1px solid rgb(209, 209, 209) ;
+        justify-content: space-between;
+        align-content: space-around;
+        height: 8rem;
+        padding-left: 3rem;
+    }
+
+    h5{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    p{
+        line-height: 1.6rem;
+    }
+
+    .social{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .social i{
+        font-size: 1.2rem;
+        border : 1px solid rgb(209, 209, 209);
+        border-radius: 20px;
+        padding : 10px;
+        transform : 0.3s;
+        color: black; 
+        margin: -5px 7px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:700px) {
+        border-top: 1px solid rgba(0, 0, 0, 0.100);
+
+        div{
+            height: 8rem;
+            padding: 0px;
+            padding: 0 12.5%;
+            grid-template-columns: 18% 82%;
+        }
+
+
+        
+    }
+}
