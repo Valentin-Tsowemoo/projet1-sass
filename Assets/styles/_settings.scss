@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Inter-ExtraBold";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: "Merriweather-Light";
+    src: url(../fonts/Merriweather-Light.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../images/bg.jpg) center/cover repeat;
+    background-size: 100% 19%;
+    background-position: top;
+    font-family: "Merriweather-Light";
+
+    @media screen and (max-width:700px){
+      background-size: 120% 20%;
+  }
+
+}

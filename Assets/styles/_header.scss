@@ -1,27 +1,16 @@
-// .body-container{
-//     width: 100%;
-//     background: url(../images/bg.jpg) center/cover repeat;
-//     background-size: contain;
-//     background-position: 0 -200px;
-//     object-fit: cover;
-// }
+.body-container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
 header {
-    width: 100%;
-    height: 90vh;
-    background: url(../images/bg.jpg) center/cover repeat ;
+    height: 70vh;
     object-fit: cover;  
     padding: 30px;
 }
-@font-face {
-    font-family: "Inter-ExtraBold";
-    src: url(../fonts/Inter-ExtraBold.ttf);
-  }
-@font-face {
-    font-family: "Merriweather-Light";
-    src: url(../fonts/Merriweather-Light.ttf);
-  }
-  
-  .header-container {
+
+.header-container {
     // background-color: rgba(0, 0, 255, 0.436);
     // flex-direction: column;
     // justify-content: center;
@@ -39,6 +28,10 @@ header {
         font-family: Inter-ExtraBold;
         font-size: 4em;
         width: 550px;
+        @media screen and (max-width:700px){
+            font-size: 3rem;
+        }
+
     }
         
     p {
@@ -50,7 +43,14 @@ header {
         // text-align: center;
         // white-space: nowrap;
         margin-bottom: 20PX;
-        color: white;   
+        color: white;
+        @media screen and (max-width:700px){
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
     }
         
     i {
@@ -63,21 +63,5 @@ header {
         background: url(../images/icone_bas.png) center;
         background-size: 25px;
         background-repeat: no-repeat;
-    }
-  }
-
-  @media screen and (max-width:700px) {
-    header {
-        padding: 60px;
-    }
-    h1 {
-        font-size: 2.5em;
-        width: 550px;
-    }
-    p{
-        width: 100%;
-        white-space: nowrap;
-        margin-bottom: 20PX;
-        color: white;   
     }
   }
